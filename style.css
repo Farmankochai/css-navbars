@@ -1,0 +1,64 @@
+body {
+
+    font-family: "Euclid Circular A", "Poppins";
+    padding: 0;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    transition: 0.3s;
+    color: inherit;
+    font-weight: 600;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    translate: 0 -72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 72px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    background: #000000;
+    transition: 0.3s;
+  }
+  
+  nav.visible {
+    top: 0;
+    translate: 0;
+  }
+  
+  nav > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-items > a {
+  text-decoration: none;
+  color: #fff;
+  height: 72px;
+  display: grid;
+  place-items: center;
+}
+
+.nav-items > a:hover {
+  color: #4B6D5F;
+}
